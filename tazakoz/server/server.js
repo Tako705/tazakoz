@@ -9,7 +9,7 @@ const { DatabaseSync } = require('node:sqlite');
 const PORT = +process.env.PORT || 3000;
 const INSPECTOR_KEY = process.env.INSPECTOR_KEY || 'demo-inspector';
 const DB_FILE = process.env.DB_FILE || path.join(__dirname, 'tazakoz.db');
-const PUBLIC = path.join(__dirname, '..', 'public');
+const PUBLIC = path.join(__dirname, '..', 'docs');
 
 const REGIONS = ['astana', 'almaty', 'shymkent'];
 const ROUTES = { dump: 'akimat', trees: 'akimat', water: 'ecom', air: 'ecom' }; // rule-based routing (PRD 9)
